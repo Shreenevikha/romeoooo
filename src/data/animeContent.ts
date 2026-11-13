@@ -28,8 +28,8 @@ export const COUPLE_PHOTOS: MemoryPhoto[] = [
   },
   {
     id: 'photo-3',
-    title: 'Holding Hands in the Car',
-    caption: 'Your hand in mine on the gear shift, quiet roads and our music 🤍',
+    title: 'Endless Selfies, Forever Us 🤍',
+    caption: 'Countless mirror selfies still loading until our eyes close forever. So stay healthy and get ready for a lifetime of them!🤍',
     emoji: '🏮',
     image: '/photo3.jpg',
     rotation: '-rotate-1',
@@ -66,7 +66,7 @@ export const RAGHAV_STATS = {
     },
     {
       name: "🍙 Food Thief Passive",
-      desc: "Claims he isn't hungry, then takes half my fries and looks adorable doing it.",
+      desc: "He proudly claims he’s hungry, eats his food and mine too — an absolute food factory, and somehow the cutest one! 😂❤️.",
     },
   ],
 }
