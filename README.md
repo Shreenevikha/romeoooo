@@ -1,155 +1,61 @@
-# 🌹 BEFORE I SAY FOREVER
-### *A Luxury Digital Love Story dedicated to Raghav*
+# For Raghav — Anime & Love ✨ (君と私の物語)
 
-> **“The space between ‘I like you’ and ‘I love you.’”**
-
-An intimate, cinematic, luxury editorial interactive experience designed from **Juliet** to **Raghav**. Built with golden hour warmth, midnight obsidian tones, champagne gold typography, sacred memories of **October 2 & 3**, interactive keepsake letters, and a promise of forever until the last breath.
+A minimal, sweet, and visually impressive website designed for an **anime lover**. Features Makoto Shinkai-style twilight skies with shooting stars, the Red String of Fate, an S-Rank Gamer Boyfriend profile, interactive polaroids with real photo upload, mystery love bento capsules, and a celebration confetti seal.
 
 ---
 
-## ✨ Features & Highlights
+## 🌟 What Raghav Experiences on the Website (Clean & Minimal)
 
-- **🌙 11 Luxury Story Chapters**: Seamless continuous vertical scroll from Dawn to Sanctuary with active scroll tracking (*ScrollSpy*).
-- **💍 Sacred Milestone (October 2 & 3)**: The unforgettable turning point when Juliet confessed *"I love you"* and witnessed Raghav's radiant joy.
-- **✨ The Answer to All Prayers**: Raghav celebrated as the sanctuary, safe home, and divine answer to Juliet's lifelong prayers.
-- **💌 Kept & Studied Letters**: Tactile parchment reader featuring Raghav's handwritten notes that Juliet re-reads with devotion.
-- **📱 Mobile-First & Device Simulation**:
-  - Smooth vertical touch scrolling and thumb-friendly controls.
-  - Native bottom-sheet memory drawers with tactile photo cards.
-  - **Desktop Phone Simulator**: Toggle between *Fullscreen Desktop View* and an *iPhone 16 Pro Viewport* with dynamic island and frame.
-- **🎵 Romantic Web Audio Engine**:
-  - Ambient piano and synth chord progressions generated in-browser.
-  - Heartbeat pulse, celestial chimes, and interactive music player.
-- **🌌 Interactive Celestial Constellation**:
-  - Star map where each memory connected lights up the celestial heart.
-- **🎨 “Golden Hour × Midnight Noir” Aesthetic**:
-  - Obsidian noir backgrounds (`#040407`), champagne gold highlights (`#e6ca85`), warm ivory calligraphy, and delicate sunlight rays.
+1. **🌠 Makoto Shinkai Twilight Sky (`AnimeSky`)**:
+   - Animated twilight indigo and sunset wine sky.
+   - Shooting stars periodically streaking across the sky (*Your Name / Kimi no Na wa* style).
+   - Soft drifting cherry blossom (sakura) petals.
+
+2. **🌸 The Red String of Fate Hero (`HeroAnime`)**:
+   - `「君と私の物語」` (The Story of You & Me)
+   - *"In every anime universe, timeline, and plotline... I’d still fall for you every single time."*
+   - Interactive heart nodes connected by a glowing red thread. Tapping pulses his heartbeat with sparkles and sound.
+
+3. **⚡ Raghav's S-Rank Character Profile (`CharacterProfile`)**:
+   - An anime/gamer boyfriend card:
+     - **Player**: `Raghav (ラガヴ)` • **Rank**: `S-Tier Boyfriend`
+     - **Stats**: Heart Rate Multiplier (100%), Cuteness (9999+), Cuddle Tier (S+)
+     - **Passives**: *Unfair Eye Crinkle* ⚡, *Safe Haven Aura* 🛡️, *Food Thief Passive* 🍙.
+
+4. **📸 Our Core Memories Polaroids (`PolaroidMemories`)**:
+   - 4 tilted anime polaroids with washi tape and cute captions.
+   - **Upload Your Real Photos**: You can hover or tap any photo to select a real picture from your phone/computer. It saves automatically!
+
+5. **🍱 Secret Love Bento Capsules (`LoveBentoCapsules`)**:
+   - 4 cute mystery cards (🍙 🎧 🌙 🌸) that Raghav can tap to flip and reveal sweet little whispers.
+
+6. **💌 Sweet Heartfelt Note & Confetti (`AnimeLoveLetter`)**:
+   - Short, punchy, beautiful love note from Kanmani to Raghav.
+   - Big shiny celebration button: *"You're My Favorite Human, Raghav 💕"* with confetti and sound!
 
 ---
 
-## 🚀 Quick Start: How to Run the Project
+## 📲 How to Deploy on Vercel & Get Raghav's QR Code
 
-### 1. Prerequisites
-Ensure you have **Node.js** (v18 or higher) and **npm** installed.
+### 1. Push to GitHub
 ```bash
-node -v
-npm -v
+git add .
+git commit -m "Minimal anime website for Raghav"
+git push origin main
 ```
 
-### 2. Install Dependencies
+### 2. Deploy on Vercel
+1. Go to [vercel.com](https://vercel.com) and log in.
+2. Click **Add New → Project**, select your GitHub repository, and click **Deploy**.
+3. You will get your live link (for example: `https://for-raghav.vercel.app`).
+
+### 3. Generate the Single QR Image for Raghav
+Once deployed, run this command in your terminal with your actual Vercel URL:
 ```bash
-npm install
+npm run qr https://your-actual-url.vercel.app
 ```
 
-### 3. Start the Local Development Server
-```bash
-npm run dev
-```
+This immediately saves a high-resolution, camera-scannable **`raghav-qr-code.png`** in your project folder!
 
-The terminal will display the local and network URLs:
-```
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: http://<your-ip-address>:5173/
-```
-
-Open **[http://localhost:5173/](http://localhost:5173/)** in your browser.
-
----
-
-## 📱 Viewing on a Mobile Phone
-
-### Method A: Network Sharing (Same Wi-Fi)
-1. Run `npm run dev -- --host`.
-2. Connect your phone to the same Wi-Fi network as your computer.
-3. Open the **Network URL** shown in the terminal (e.g. `http://192.168.x.x:5173/`) on your phone’s browser (Safari/Chrome).
-
-### Method B: Desktop Mobile Simulator
-1. Open **`http://localhost:5173/`** on your desktop browser.
-2. Click the **📱 "Phone View"** button in the top navigation bar to activate the iPhone 16 Pro simulation frame with touch scroll and dynamic island.
-
----
-
-## 🛠️ Build & Production
-
-To create an optimized production build:
-```bash
-npm run build
-```
-
-To preview the production build locally:
-```bash
-npm run preview
-```
-
----
-
-## ✍️ How to Customize the Story & Memories
-
-All texts, dates, names, photos, songs, and secret messages are centralized in a single file for easy customization:
-
-📍 **[`src/data/storyData.ts`](file:///e:/working/hello/src/data/storyData.ts)**
-
-You can easily edit:
-- **`STORY_META`**: Names, theme, titles, dedications.
-- **`CHAPTER_01_DATA`**: Dating card bio, tags, and 5 journey milestones.
-- **`CHAPTER_02_DATA`**: Flower memories, quotes, and botanical descriptions.
-- **`CHAPTER_03_DATA`**: Cinema ticket details (*Avengers: Endgame*, date, showtime, seat) and 35mm film strip frames.
-- **`CHAPTER_04_DATA`**: Digital gift titles, code snippets, and feature tags.
-- **`CHAPTER_06_DATA`**: 8 personal reasons for *"I Like You"* with custom polaroid photos.
-- **`CHAPTER_07_DATA`**: Midnight car playlist track names and romantic notes.
-- **`CHAPTER_09_DATA`**: Star names and constellation memories.
-- **`FINAL_CHAPTER_DATA`**: Signoff, rose tooltip, and the wax-sealed **P.S. Secret Letter**.
-
----
-
-## 📂 Project Structure
-
-```
-├── public/                  # Static assets & icons
-├── src/
-│   ├── components/
-│   │   ├── chapters/        # 11 Chapter Story Components
-│   │   │   ├── IntroScene.tsx
-│   │   │   ├── Chapter01Beginning.tsx
-│   │   │   ├── Chapter02Flowers.tsx
-│   │   │   ├── Chapter03Midnight.tsx
-│   │   │   ├── Chapter04Gifts.tsx
-│   │   │   ├── Chapter05LoveYou3000.tsx
-│   │   │   ├── Chapter06LikeYou.tsx
-│   │   │   ├── Chapter07Road.tsx
-│   │   │   ├── Chapter08NoPromises.tsx
-│   │   │   ├── Chapter09Constellation.tsx
-│   │   │   └── FinalScene.tsx
-│   │   ├── effects/         # Starfield, Custom Cursor, Petal Rain, Film Grain
-│   │   │   ├── CustomCursor.tsx
-│   │   │   ├── StarfieldBackground.tsx
-│   │   │   └── PetalRain.tsx
-│   │   └── ui/              # Navigation, Memory Modal, Secret Drawer
-│   │       ├── NavigationControls.tsx
-│   │       ├── MemoryModal.tsx
-│   │       └── SecretDrawer.tsx
-│   ├── data/
-│   │   └── storyData.ts     # Centralized Story Data & Content
-│   ├── types/
-│   │   └── story.ts         # TypeScript Interfaces
-│   ├── utils/
-│   │   └── audioEngine.ts   # Web Audio Synthesizer & Sound FX Engine
-│   ├── App.tsx              # Main Scroll Layout & Intersection Observer
-│   ├── index.css            # Tailwind CSS & Luxury Editorial Fonts
-│   └── main.tsx             # Entry Point
-├── package.json             # Project Dependencies & Scripts
-├── vite.config.ts           # Vite Configuration
-└── README.md                # Documentation
-```
-
----
-
-## 💻 Tech Stack
-
-- **React 19** + **TypeScript**
-- **Vite 8**
-- **Tailwind CSS v4** (`@tailwindcss/vite`)
-- **Framer Motion** (Cinematic transitions & scroll animations)
-- **Lucide React** (Icons)
-- **Canvas Confetti** (Finale celebration burst)
-- **Web Audio API** (Procedural ambient romance soundtrack)
+### 4. Send to Raghav
+Send `raghav-qr-code.png` to Raghav on WhatsApp or Instagram. When he points his phone camera at it, this minimal anime website will open for him instantly!
